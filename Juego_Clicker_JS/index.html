@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>DALE BESITOS AL GUAPETÓN DE LA IMAGEN</h2>
+        
+        <!-- Contador de cuenta regresiva -->
+        <span id="countdown">20</span>
+        
+        <!-- Imagen para hacer clic -->
+        <img id="jaimemingla" src="jaimemingla.jpg" width="550" height="550" onclick="incrementarContador()">
+        
+        <!-- Aquí mostraré el valor del contador de clics -->
+        <div id="puntos">0</div>
+
+        <!-- El botón reset al principio está oculto por estilo, luego el JS lo muestra -->
+        <button id="botonReset" style="display: none;" onclick="resetearContador()">Resetear Contador</button>
+
+        <!-- Resultado final después de que el tiempo se agote -->
+        <div id="resultado" class="hidden">Has dado <span id="totalClicks">0</span> besitos!</div>
+    </div>
+
+    <!-- Código JavaScript -->
+    <script type="text/javascript" src="./js/codigo.js"></script>
+    
+</body>
+</html>
